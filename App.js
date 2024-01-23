@@ -3,7 +3,7 @@ import 'react-native-gesture-handler';
 import React, { useEffect, useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { LoginScreen, HomeScreen, RegistrationScreen } from './src/screens';
+import { LoginScreen, HomeScreen, RegistrationScreen, AppointmentsScreen } from './src/screens';
 import { decode, encode } from 'base-64';
 import { onAuthStateChanged } from 'firebase/auth';
 import { FIREBASE_AUTH } from './firebaseConfig';
@@ -58,6 +58,7 @@ export default function App() {
         <Stack.Screen name="Login" component={LoginScreen} />
         {/* Registration screen */}
         <Stack.Screen name="Registration" component={RegistrationScreen} />
+        <Stack.Screen name="Appointments" component={AppointmentsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

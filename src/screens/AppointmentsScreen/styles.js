@@ -11,12 +11,18 @@ export default StyleSheet.create({
     alignItems: 'center',  // Centra los elementos verticalmente
     justifyContent: 'center', // Centra los elementos horizontalmente
   },
+  appointmentContainer: {
+    marginTop: 16,
+    borderBottomColor: '#ccc',
+    borderBottomWidth: 1,
+    paddingBottom: 16,
+  },
   textHome: {
     fontSize: 30,
     marginBottom: 20,
     marginTop: 30
   },
-  entityText: {
+  dateText: {
     fontSize: 20,
     color: '#333'
   },
@@ -33,7 +39,7 @@ export default StyleSheet.create({
     height: 120,
     width: 120,
     borderRadius: 100,
-    backgroundColor: '#3498db',
+    backgroundColor: '#fff0000',
     padding: 10,
     alignItems: 'center',
     justifyContent: 'center',

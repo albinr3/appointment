@@ -7,7 +7,7 @@ import { collection, setDoc, onSnapshot, doc, query, where, orderBy, serverTimes
 
 
 
-export default function HomeScreen(props) {
+export default function SlotsScreen(props) {
   const navigation = props.navigation;
   const [noteText, setNoteText] = useState('')
   const [notes, setNotes] = useState([])
@@ -112,7 +112,7 @@ const renderEntity = ({ item, index }) => {
       <Pressable style={styles.button} onPress={onAddButtonPress}>
         <Text style={styles.buttonText}>Slots</Text>
       </Pressable>
-      <Pressable style={styles.button} onPress={()=>navigation.navigate("Appointments")}>
+      <Pressable style={styles.button} onPress={onAddButtonPress}>
         <Text style={styles.buttonText}>Appointments</Text>
       </Pressable>
     </View>
